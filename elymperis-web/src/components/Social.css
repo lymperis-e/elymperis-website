@@ -1,0 +1,31 @@
+#social {
+    display: flex;
+    flex-direction: row;
+
+    border-radius: 500px;
+    margin-top: -20px;
+    text-align: center;
+    background-color: #bfeeb85e;
+    box-shadow: 0 0 10px 0px #0003;
+    backdrop-filter: blur(4px);
+
+    transition: all .6s;
+}
+
+#social:hover{
+    background-color: #b8e6ee5e;
+}
+
+.social-btn {
+    margin: 1rem;
+}
+
+.social-btn-img {
+    filter: invert(100%) !important;
+    transition: transform .3s ease-in-out;
+}
+
+.social-btn-img:hover {
+    opacity: .9;
+    transform: rotate(-10deg);
+}
