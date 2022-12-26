@@ -2,52 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
-.btn-custom {
-  background-color: transparent;
-  border-color: #57b781 !important;
-  color: white !important;
-}
-
-.btn-custom:hover {
-  background-color: #57b781;
-  border-color: #57b781 !important;
-  color: white !important;
-}
-
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-  }
-}
-
-
-a:link {
-  color: rgb(115, 213, 63);
-}
-
-/* visited link */
-a:visited {
-  color: rgb(251, 180, 66);
-}
-
-/* mouse over link */
-a:hover {
-  color: hotpink;
-}
-
-/* selected link */
-a:active {
-  color: blue;
-}
-
 ::-moz-selection {
   /* Code for Firefox */
   color: white;
@@ -59,16 +13,11 @@ a:active {
   background: #c16b29;
 }
 
+
 h1 {
-  font-size: 3em !important;
-}
-
-h4 {
-  font-size: 1em !important;
-}
-
-a {
-  font-size: 1em !important;
+  font-family: 'Poiret One', cursive !important;
+  color: black !important;
+  text-shadow: 2px 2px #d9652c73;
 }
 
 
@@ -83,50 +32,6 @@ a {
 
 
 
-
-
-
-
-
-.typewriter {
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange;
-  /* The typwriter cursor */
-  white-space: nowrap;
-  /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em;
-  /* Adjust as needed */
-  animation:
-      typing 7s steps(40, end),
-      blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-      width: 0
-  }
-
-  to {
-      width: 100%
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-  from,
-  to {
-      border-color: transparent
-  }
-
-  50% {
-      border-color: orange;
-  }
-}
 
 
 

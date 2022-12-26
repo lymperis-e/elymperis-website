@@ -1,15 +1,20 @@
-import { useState } from 'react'
+import { Outlet, NavLink  } from "react-router-dom";
 import './Navbar.css'
 
 function Navbar() {
 
 
     return (
-        <nav id="navbar">
-            <a className="nav-link nav-dark active" href="/index.html">// Home</a>
-            <a className="nav-link nav-dark" href="/bio.html">// Bio</a>
-            <a className="nav-link nav-dark" href="/projects.html">// Projects</a>
-        </nav>
+        <>
+            <nav id="navbar">
+                <NavLink to="/" className="nav-link nav-dark" >// Home</NavLink>
+                <NavLink to="/bio" className="nav-link nav-dark" >// Bio</NavLink>
+                <NavLink to="/projects" className="nav-link nav-dark" >// Projects</NavLink>
+            </nav>
+
+            <Outlet />
+        </>
+
     )
 
 }
