@@ -11,7 +11,7 @@ function Profile() {
 
             <div id="title-pane">
                 <h1 className="funky">Efstathios Lymperis</h1>
-                <h4 className="typewriter" style={{fontFamily: "'Poiret One', cursive", color: "black", maxWidth: '200px'}}>GIS Engineer / Student of Geoinformatics, MSc</h4>
+                <h4 className="typewriter" style={{fontFamily: "'Poiret One', cursive", color: "black", maxWidth: '95vw'}}>GIS Engineer / Student of Geoinformatics, MSc</h4>
                 <h5 style={{color: '#c16b29', fontFamily:`'Poiret One', cursive`, marginTop:'1rem', fontSize:'larger' }}>📍 Thessaloniki, GR</h5>
             </div>
 
