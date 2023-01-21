@@ -100,3 +100,11 @@ main {
   flex-direction: row;
   filter: invert(1);
 }
+
+
+@media(max-width:1000px) {
+  :root {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

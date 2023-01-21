@@ -5,11 +5,12 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-
+    transition: all 1s;
+    opacity: 0;
 }
 
 #title-pane {
-    border-radius: 500px;
+    border-radius: 20px;
     padding: 40px;
     padding-bottom: 20px;
     margin-top: -40px;
@@ -17,6 +18,7 @@
     background-color: #ffffffc7;
     box-shadow: 0 0 10px 0px #0003;
     backdrop-filter: blur(4px);
+    border: solid 1px #f3d0b9;
 }
 
 #profileImg {

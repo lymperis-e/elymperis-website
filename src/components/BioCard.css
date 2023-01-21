@@ -1,10 +1,9 @@
-
-#bio-container{
+#bio-container {
     height: 100vh;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #bio-card {
@@ -14,31 +13,39 @@ align-items: center;
     align-items: center;
     justify-content: center;
     margin-bottom: auto;
-    margin-top:auto;
+    margin-top: auto;
     max-width: 40vw;
     color: black;
 
-    border-radius: 500px;
+    border-radius: 20px;
     padding: 40px;
 
     text-align: center;
     background-color: #f4f6f15e;
     box-shadow: 0 0 10px 0px #0003;
     backdrop-filter: blur(4px);
+    border: solid 1px #f3d0b9;
 
 
 }
 
-#bio-img{
+#bio-img {
     box-shadow: 0 0 20px 0px #000;
 }
 
-#download-cv-btn{
+#download-cv-btn {
     margin-bottom: auto;
 }
 
-@media(max-width:1000px){
+@media(max-width:1000px) {
     #bio-card {
         flex-direction: column;
+        max-width:100%;
+        width:100%
+    }
+
+    #bio-container {
+        width: 100%;
+        margin: 20px;
     }
 }

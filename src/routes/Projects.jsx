@@ -1,10 +1,13 @@
+import { useEffect } from 'react'
 import ProjectItem from '../components/Projects/ProjectItem'
 
 import TerriaMock from "/img/projects/terria_mock.png"
 import GeeMock from "/img/projects/gee_mock.png"
 
 function Projects() {
-
+    useEffect(() => {
+        document.querySelector('#project-container').style.backgroundColor = '#fffef5'
+    })
 
     return (
         <>

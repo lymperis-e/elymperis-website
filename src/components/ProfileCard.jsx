@@ -2,8 +2,13 @@ import Social from './Social'
 import ProfileImage from '/img/profile.jpg'
 import './ProfileCard.css'
 
+import { useEffect } from 'react'
+
 function Profile() {
 
+    useEffect(()=>{
+        document.querySelector('#profile-card').style.opacity = 1
+    })
 
     return (
         <div id="profile-card">

@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import ProjectItem from '../components/Projects/ProjectItem'
 
 import Mesolongi from "/maps/mesolongi.jpg"
@@ -10,6 +11,11 @@ import Olympus from "/maps/olympus.jpg"
 
 
 function Maps() {
+
+
+    useEffect(() => {
+        document.querySelector('#project-container').style.backgroundColor = '#fffef5'
+    })
 
 
     return (
@@ -28,7 +34,7 @@ function Maps() {
 
                 </h1>
 
-                <ProjectItem title="Mesolongi, Negative Map" mockup={Mesolongi} descr="" link="/maps/mesolongi.jpg"/>
+                <ProjectItem title="Mesolongi, Negative Map"  mockup={Mesolongi} descr="" link="/maps/mesolongi.jpg"/>
                 <ProjectItem title="Street Lights of Trikala" mockup={Trikala} descr="" link="/maps/trikala.jpg"/>
                 <ProjectItem title="Topographic & Street Map of Athens" mockup={AthensTopo} descr="" link="/maps/athens_topo.jpg"/>
                 <ProjectItem title="Patraic Gulf, Sentinel2 + SRTM" mockup={Patraic} descr="" link="/maps/patraic.jpg"/>
