@@ -1,12 +1,25 @@
-import ProfileCard from '../components/ProfileCard'
-
+import ProjectItem from '../components/Projects/ProjectItem'
 
 function Projects() {
 
 
     return (
         <>
-            <ProfileCard />
+
+            <div id="project-container" style={{
+                display: "flex",
+                flexDirection: "column",
+                height: "100%",
+                width: "80vw",
+                alignItems: "center",
+                justifyContent: "center"
+            }}>
+
+                <ProjectItem />
+
+            </div>
+
+            
         </>
     )
 }

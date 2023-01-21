@@ -1,0 +1,26 @@
+#bio-card {
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: auto;
+    max-width: 40vw;
+    color: black;
+
+    border-radius: 500px;
+    padding: 40px;
+
+    text-align: center;
+    background-color: #f4f6f15e;
+    box-shadow: 0 0 10px 0px #0003;
+    backdrop-filter: blur(4px);
+}
+
+#bio-img{
+    box-shadow: 0 0 20px 0px #000;
+}
+
+#download-cv-btn{
+    margin-bottom: auto;
+}

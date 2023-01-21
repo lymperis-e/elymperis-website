@@ -1,4 +1,4 @@
-import ProfileCard from '../components/ProfileCard'
+import BioCard from '../components/BioCard'
 
 
 function Bio() {
@@ -6,7 +6,7 @@ function Bio() {
 
     return (
         <>
-            <h1>COOL!!!!</h1>
+            <BioCard/>
         </>
     )
 }

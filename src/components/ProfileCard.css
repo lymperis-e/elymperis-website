@@ -32,11 +32,6 @@
     box-shadow: 0 0 70px 0px #000;
 }
 
-.rounded-circle {
-    padding: 2px;
-    border-radius: 50% !important;
-}
-
 
 .funky {
     transition: all 1.4s;

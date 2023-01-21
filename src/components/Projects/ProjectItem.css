@@ -1,0 +1,91 @@
+body {
+  overflow: auto;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+
+
+
+.featurette {
+  margin-top: 40vh;
+  background-color: #ffe4c4db;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+
+
+.project-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff0;
+  border-radius: 7px;
+  color: #252525;
+  border: solid 1px #fbb442;
+  backdrop-filter: blur(3px);
+}
+
+.project-label {
+  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  transition: var(--transition);
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+}
+
+@media(max-width:1000px) {
+  .project-item {
+    flex-direction: column;
+  }
+}
+
+
+
+img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: all 0.25s cubic-bezier(0.610, 0.215, 0.355, 1);
+}
+
+img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+
+/* Hide unrline from hovered links*/
+a {
+  color: rgba(251, 180, 66, 1)
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+
+.swipe-link h2 {
+  color: rgba(251, 180, 66, 1);
+  text-decoration: none;
+  background:
+    linear-gradient(to right, rgba(251, 180, 66, 0), rgba(251, 180, 66, 0)),
+    linear-gradient(to right, rgba(251, 180, 66, 1), rgba(237, 211, 171), rgb(97, 61, 8));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.swipe-link h2:hover,
+.swipe-link h2:focus {
+  text-decoration: none !important;
+  background-size: 0 0.1em, 100% 0.1em;
+}
