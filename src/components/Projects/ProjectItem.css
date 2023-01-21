@@ -1,8 +1,13 @@
 body {
-  overflow: auto;
+  overflow-y: auto;
+  background-color: antiquewhite;
+  background-image: unset;
 }
 
 
+#wrapper{
+  height: fit-content !important;
+}
 
 
 @media (min-width: 768px) {
@@ -23,15 +28,15 @@ body {
 
 
 
+
+
 .project-item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #fff0;
-  border-radius: 7px;
-  color: #252525;
-  border: solid 1px #fbb442;
-  backdrop-filter: blur(3px);
+  background-color: aliceblue;
+margin: 40px;
+border-radius: 7px;
 }
 
 .project-label {

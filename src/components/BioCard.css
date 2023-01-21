@@ -1,3 +1,12 @@
+
+#bio-container{
+    height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
 #bio-card {
     margin-bottom: auto;
     display: flex;
@@ -5,6 +14,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: auto;
+    margin-top:auto;
     max-width: 40vw;
     color: black;
 
@@ -15,6 +25,8 @@
     background-color: #f4f6f15e;
     box-shadow: 0 0 10px 0px #0003;
     backdrop-filter: blur(4px);
+
+
 }
 
 #bio-img{
@@ -23,4 +35,10 @@
 
 #download-cv-btn{
     margin-bottom: auto;
+}
+
+@media(max-width:1000px){
+    #bio-card {
+        flex-direction: column;
+    }
 }
