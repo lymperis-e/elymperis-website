@@ -1,22 +1,21 @@
 
-import TerriaMock from "/img/projects/terria_mock.png"
 import GitHubLogo from "/img/github_white.png"
 
 import './ProjectItem.css'
 
-function ProjectItem() {
+function ProjectItem(props) {
 
-    
+
     return (
 
         <>
             <div className="project-item">
                
 
-                    <a href="http://data.elymperis.com" target="_blank">
+                    <a href={props.link} target="_blank">
 
-                        <img src={TerriaMock}
-                            className="featurette-image mx-auto rounded"
+                        <img src={props.mockup}
+                            className="bw-img"
                             height="400"></img>
                     </a>
 
@@ -24,13 +23,13 @@ function ProjectItem() {
                 
                     <div className="project-label">
 
-                        <a className="swipe-link" href="http://data.elymperis.com" target="_blank">
+                        <a className="swipe-link" href={props.link} target="_blank">
                             <h2 style={{
                                 fontFamily: "'Raleway', sans-serif", fontSize: "1.5rem !important"
-                            }}>OpenGreekGeodata</h2>
+                            }}>{props.title}</h2>
                         </a>
                         <p>
-                            A one-stop-shop for greek geodata sources, based on TerriaJS
+                            {props.descr}
                         </p>
 
                         <div className="row">

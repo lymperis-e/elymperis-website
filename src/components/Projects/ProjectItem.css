@@ -5,7 +5,7 @@ body {
 }
 
 
-#wrapper{
+#wrapper {
   height: fit-content !important;
 }
 
@@ -19,24 +19,34 @@ body {
 
 
 
-.featurette {
-  margin-top: 40vh;
-  background-color: #ffe4c4db;
-  border-radius: 15px;
-  padding: 25px;
+
+
+
+#project-container {
+  transition: all .7s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(37, 37, 37);
+  backdrop-filter: blur(3px);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: fit-content;
+  background-image: url('/img/isolines.png');
+  
 }
-
-
-
-
 
 .project-item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: aliceblue;
-margin: 40px;
-border-radius: 7px;
+  margin: 40px;
+  border-radius: 7px;
 }
 
 .project-label {
@@ -55,13 +65,13 @@ border-radius: 7px;
 
 
 
-img {
+.bw-img {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   transition: all 0.25s cubic-bezier(0.610, 0.215, 0.355, 1);
 }
 
-img:hover {
+.bw-img:hover {
   filter: none;
   -webkit-filter: grayscale(0);
 }
