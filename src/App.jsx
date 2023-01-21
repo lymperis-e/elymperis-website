@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Home from './routes/Home'
 import Bio from './routes/Bio'
 import Projects from './routes/Projects'
+import Maps from './routes/Maps'
 
 
 
@@ -23,6 +24,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/bio" element={<Bio />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/maps" element={<Maps />} />
           </Route>
         </Routes>
       </BrowserRouter>

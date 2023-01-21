@@ -10,6 +10,8 @@ function Navbar() {
                 <NavLink to="/" className="nav-link nav-dark" >// Home</NavLink>
                 <NavLink to="/bio" className="nav-link nav-dark" >// Bio</NavLink>
                 <NavLink to="/projects" className="nav-link nav-dark" >// Projects</NavLink>
+                <NavLink to="/maps" className="nav-link nav-dark" >// Maps</NavLink>
+
             </nav>
 
             <Outlet />
