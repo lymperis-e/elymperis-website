@@ -6,9 +6,6 @@ import GeeMock from "/img/projects/gee_mock.png"
 function Projects() {
 
 
-    document.body.style.backgroundColor = "antiquewhite";
-
-
     return (
         <>
             <div id="project-container">

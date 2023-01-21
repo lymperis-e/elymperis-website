@@ -12,9 +12,6 @@ import Olympus from "/maps/olympus.jpg"
 function Maps() {
 
 
-    document.body.style.backgroundColor = "antiquewhite";
-
-
     return (
         <>
             <div id="project-container">
@@ -27,7 +24,7 @@ function Maps() {
                         marginTop: "200px"
                     }}
                 >
-                    &lt;/&gt; CARTOGRAPHIC GALLERY
+                    CARTOGRAPHIC GALLERY
 
                 </h1>
 

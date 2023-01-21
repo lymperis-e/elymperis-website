@@ -19,11 +19,13 @@ h1 {
   color: black !important;
   text-shadow: 2px 2px #d9652c73;
 }
+
 h2 {
   font-family: 'Poiret One', cursive !important;
   color: black !important;
   text-shadow: 2px 2px #d9652c73;
 }
+
 h3 {
   font-family: 'Poiret One', cursive !important;
   color: black !important;
@@ -44,20 +46,22 @@ h3 {
 
 
 
-:root{
-  color:black
+:root {
+  color: black
 }
 
 
 
 
 body {
-  background-image: url(/img/bg.jpeg);
+  background-image: url(/img/isolines.png);
+  /*
   background-repeat: no-repeat;
   background-size: cover;
+  */
 }
 
-#wrapper{
+#wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -96,8 +100,3 @@ main {
   flex-direction: row;
   filter: invert(1);
 }
-
-
-
-
-
