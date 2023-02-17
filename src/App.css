@@ -38,9 +38,22 @@ h3 {
   border-radius: 50% !important;
 }
 
+.img-hov{
+  opacity:.7;
+  transition: all .8s;
+}
+
+.img-hov:hover{
+  opacity:1
+}
 
 
 
+.section-title{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.47);
+  margin-bottom: 8px;
+  margin-top: 100px;
+}
 
 
 
@@ -107,4 +120,9 @@ main {
     font-size: 12px;
     line-height: 18px;
   }
+
+  .section-title{
+    margin-top: 80px;
+}
+
 }

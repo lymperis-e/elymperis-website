@@ -20,6 +20,7 @@ a {
   color: rgb(193, 107, 41);
   text-decoration: inherit;
 }
+
 a:hover {
   color: rgb(115, 63, 24);
 }
@@ -34,7 +35,7 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3rem;
   line-height: 1.1;
 }
 
@@ -50,12 +51,62 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.pill-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 12px;
+  grid-auto-rows: auto;
+  padding: 5px 50px;
+  padding-left:0;
+}
+
+.pill {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 30px;
+  border: solid 1px #c87066;
+  margin: 0;
+  background-color: #faebd726;
+  transition: all .4s;
+}
+
+.pill:hover {
+  box-shadow: 0 0 10px 0px #4da893c2;
+}
+
+
+
+@media(max-width:1000px) {
+  h1{
+    font-size: 2.7rem;;
+  }
+
+  .pill-container {
+    padding: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding-left: 0;
+  }
+
+  .pill {
+    font-size: small;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -63,9 +114,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }

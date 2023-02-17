@@ -1,6 +1,5 @@
 import BioCard from '../components/BioCard'
 
-
 function Bio() {
 
     return (

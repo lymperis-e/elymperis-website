@@ -9,29 +9,43 @@
     opacity: 0;
 }
 
+.pane-head {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 95vw;
+    align-items: center;
+}
+
 #title-pane {
     border-radius: 20px;
     padding: 40px;
     padding-bottom: 20px;
     margin-top: -40px;
-    text-align: center;
     background-color: #ffffffc7;
     box-shadow: 0 0 10px 0px #0003;
     backdrop-filter: blur(4px);
     border: solid 1px #f3d0b9;
+    max-width: 95vw;
 }
 
 #profileImg {
-    z-index: 1000;
-
+    z-index: 3;
+    width: 110px;
     border-color: #343a40 !important;
     border-width: 1px;
     border-style: solid;
-    box-shadow: 0 0 20px 0px #000;
+    box-shadow: 0 0 10px 0px #bb72469c;
     transition: box-shadow .7s !important;
 }
-#profileImg:hover{
-    box-shadow: 0 0 70px 0px #000;
+
+#profileImg:hover {
+    box-shadow: 0 0 15px 0px #4cae69;
+border-color: #2158ae !important;
+}
+
+#head{
+    margin-top: 50px;
 }
 
 
@@ -41,9 +55,16 @@
 
 .funky:hover {
     filter: hue-rotate(270deg);
+    color: #2d933d !important;
     text-shadow: 4px 4px rgba(0, 0, 0, 0);
 }
 
+
+@media(max-width:1000px){
+    #profileImg{
+        width: 96px;
+    }
+}
 
 
 
@@ -63,29 +84,28 @@
     animation:
         typing 7s steps(40, end),
         blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
+}
+
+/* The typing effect */
+@keyframes typing {
     from {
         width: 0
     }
-  
+
     to {
         width: 100%
     }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-  
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
     from,
     to {
         border-color: transparent
     }
-  
+
     50% {
         border-color: orange;
     }
-  }
-  
+}

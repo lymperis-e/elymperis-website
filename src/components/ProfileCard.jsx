@@ -6,23 +6,36 @@ import { useEffect } from 'react'
 
 function Profile() {
 
-    useEffect(()=>{
+    useEffect(() => {
         document.querySelector('#profile-card').style.opacity = 1
     })
 
     return (
         <div id="profile-card">
-            <img id="profileImg" className="funky rounded-circle " src={ProfileImage} alt="profile picture" width="120" height="120"></img>
 
-            <div id="title-pane">
-                <h1 className="funky">Efstathios Lymperis</h1>
-                <h3>Developer <a className="swipe-link" href="https://www.getmap.eu" target="_blank">@Geospatial Enabling Technologies</a></h3>
-                <h4 className="typewriter" style={{fontFamily: "'Poiret One', cursive", color: "black", maxWidth: '95vw'}}>GIS Engineer </h4>
-                <h4 className="typewriter" style={{fontFamily: "'Poiret One', cursive", color: "black", maxWidth: '95vw'}}>Student of Geoinformatics, MSc</h4>
-                <h5 style={{color: '#c16b29', fontFamily:`'Poiret One', cursive`, marginTop:'1rem', fontSize:'larger' }}>📍 Thessaloniki/Athens, GR</h5>
+            <div className="pane-head" id="head">
+                <img id="profileImg" className="rounded-circle " src={ProfileImage} alt="profile picture" ></img>
+                <h1 className="funky" style={{ marginLeft: 'auto', zIndex:1 }}>Efstathios Lymperis</h1>
             </div>
 
-            <Social/>
+            <div id="title-pane">
+
+                <h3>Software Engineer <a href="https://www.getmap.eu" target="_blank">@Geospatial Enabling Technologies</a></h3>
+                <h3 style={{ fontFamily: "'Poiret One', cursive", color: "#004786 !important", maxWidth: '95vw' }}>MSc Geoinformatics </h3>
+
+                <div className='pill-container'>
+                    <h4 class="pill" style={{ fontFamily: "'Poiret One', cursive", color: "black" }}>Web Development</h4>
+                    <h4 class="pill" style={{ fontFamily: "'Poiret One', cursive", color: "black" }}>Digital Map Design </h4>
+                    <h4 class="pill" style={{ fontFamily: "'Poiret One', cursive", color: "black" }}>Data Analysis</h4>
+                </div>
+
+            </div>
+
+            <div className="pane-head">
+                <h5 className="typewriter" style={{ color: 'rgb(0, 0, 0)', fontFamily: `'Poiret One', cursive`, marginTop: '1rem' }}>📍 Thessaloniki & Athens, GR</h5>
+                <Social />
+            </div>
+
 
         </div>
     )

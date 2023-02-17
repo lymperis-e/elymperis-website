@@ -3,7 +3,10 @@ import './BioCard.css'
 import TunnelImage from '/img/tunnel.jpg'
 import CVpdf from '/CV.pdf'
 
-function Profile() {
+import { useEffect } from 'react'
+
+
+function BioCard() {
 
 
   return (
@@ -36,4 +39,4 @@ function Profile() {
 }
 
 
-export default Profile
+export default BioCard
