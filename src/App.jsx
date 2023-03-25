@@ -7,6 +7,8 @@ import Bio from './routes/Bio'
 import Projects from './routes/Projects'
 import Maps from './routes/Maps'
 
+import Blog from './routes/Blog'
+import BlogPost from './components/Blog/BlogPost'
 
 
 import './App.css'
@@ -25,6 +27,7 @@ function App() {
             <Route path="/bio" element={<Bio />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/maps" element={<Maps />} />
+            <Route path="/blog/:slug" element={<Blog />} />
           </Route>
         </Routes>
       </BrowserRouter>

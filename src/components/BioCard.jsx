@@ -1,6 +1,6 @@
 
 import './BioCard.css'
-import TunnelImage from '/img/tunnel.jpg'
+import TunnelImage from '/img/tunnel.webp'
 import CVpdf from '/CV.pdf'
 
 import { useEffect } from 'react'

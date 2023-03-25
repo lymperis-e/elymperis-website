@@ -2,13 +2,13 @@ import { useEffect } from 'react'
 import ProjectItem from '../components/Projects/ProjectItem'
 
 
-import AthensHistoric from "/maps/athens_downtown.jpg"
-import Mesolongi from "/maps/mesolongi.jpg"
-import Trikala from "/maps/trikala.jpg"
-import AthensTopo from "/maps/athens_topo.jpg"
-import Patraic from "/maps/patraic.jpg"
-import Ioannina from "/maps/ioannina.png"
-import Olympus from "/maps/olympus.jpg"
+import AthensHistoric from "/maps/athens_downtown.webp"
+import Mesolongi from "/maps/mesolongi.webp"
+import Trikala from "/maps/trikala.webp"
+import AthensTopo from "/maps/athens_topo.webp"
+import Patraic from "/maps/patraic.webp"
+import Ioannina from "/maps/ioannina.webp"
+import Olympus from "/maps/olympus.webp"
 
 
 
@@ -35,13 +35,13 @@ function Maps() {
                 </p>
 
 
-                <ProjectItem title="Athens Historic Downtown" mockup={AthensHistoric} descr="" link="/maps/athens_downtown.jpg" />
-                <ProjectItem title="Mesolongi, Negative Map" mockup={Mesolongi} descr="" link="/maps/mesolongi.jpg" />
-                <ProjectItem title="Patraic Gulf, Sentinel2 + SRTM" mockup={Patraic} descr="" link="/maps/patraic.jpg" />
-                <ProjectItem title="Topographic Map of Olympus/Ossa" mockup={Olympus} descr="" link="/maps/olympus.jpg" />
-                <ProjectItem title="Street Lights of Trikala" mockup={Trikala} descr="" link="/maps/trikala.jpg" />
-                <ProjectItem title="Topographic & Street Map of Athens" mockup={AthensTopo} descr="" link="/maps/athens_topo.jpg" />
-                <ProjectItem title="Ioannina Topographic Map, rendered in Blender" mockup={Ioannina} descr="" link="/maps/ioannina.png" />
+                <ProjectItem title="Athens Historic Downtown" mockup={AthensHistoric} descr="" link="/maps/athens_downtown.webp" />
+                <ProjectItem title="Mesolongi, Negative Map" mockup={Mesolongi} descr="" link="/maps/mesolongi.webp" />
+                <ProjectItem title="Patraic Gulf, Sentinel2 + SRTM" mockup={Patraic} descr="" link="/maps/patraic.webp" />
+                <ProjectItem title="Topographic Map of Olympus/Ossa" mockup={Olympus} descr="" link="/maps/olympus.webp" />
+                <ProjectItem title="Street Lights of Trikala" mockup={Trikala} descr="" link="/maps/trikala.webp" />
+                <ProjectItem title="Topographic & Street Map of Athens" mockup={AthensTopo} descr="" link="/maps/athens_topo.webp" />
+                <ProjectItem title="Ioannina Topographic Map, rendered in Blender" mockup={Ioannina} descr="" link="/maps/ioannina.webp" />
                 
 
 

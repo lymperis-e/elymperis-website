@@ -1,10 +1,10 @@
 import { useEffect } from 'react'
 import ProjectItem from '../components/Projects/ProjectItem'
 
-import TerriaMock from "/img/projects/terria_mock.png"
-import GeeMock from "/img/projects/gee_mock.png"
-import FrostMock from "/img/projects/frost_mock.png"
-import WatershedPlugin from "/img/projects/watershed_toolbox.png"
+import TerriaMock from "/img/projects/terria_mock.webp"
+import GeeMock from "/img/projects/gee_mock.webp"
+import FrostMock from "/img/projects/frost_mock.webp"
+import WatershedPlugin from "/img/projects/watershed_toolbox.webp"
 
 function Projects() {
 

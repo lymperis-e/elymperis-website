@@ -1,5 +1,5 @@
 
-import GitHubLogo from "/img/github_dark.png"
+import GitHubLogo from "/img/github_dark.webp"
 
 import './ProjectItem.css'
 

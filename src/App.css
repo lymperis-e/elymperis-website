@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 
 ::-moz-selection {
@@ -55,6 +54,10 @@ h3 {
   margin-top: 100px;
 }
 
+.lead {
+  margin-left: 10px;
+  text-align: left !important;
+}
 
 
 
@@ -67,7 +70,7 @@ h3 {
 
 
 body {
-  background-image: url(/img/isolines.png);
+  background-image: url(/img/isolines.webp);
   /*
   background-repeat: no-repeat;
   background-size: cover;

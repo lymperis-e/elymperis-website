@@ -1,5 +1,5 @@
 import Social from './Social'
-import ProfileImage from '/img/profile.jpg'
+import ProfileImage from '/img/profile.webp'
 import './ProfileCard.css'
 
 import { useEffect } from 'react'
@@ -24,9 +24,9 @@ function Profile() {
                 <h3 style={{ fontFamily: "'Poiret One', cursive", color: "#004786 !important", maxWidth: '95vw' }}>MSc Geoinformatics </h3>
 
                 <div className='pill-container'>
-                    <h4 class="pill" style={{ fontFamily: "'Poiret One', cursive", color: "black" }}>Web Development</h4>
-                    <h4 class="pill" style={{ fontFamily: "'Poiret One', cursive", color: "black" }}>Digital Map Design </h4>
-                    <h4 class="pill" style={{ fontFamily: "'Poiret One', cursive", color: "black" }}>Data Analysis</h4>
+                    <h4 className="pill" style={{ fontFamily: "'Poiret One', cursive", color: "black" }}>Web Development</h4>
+                    <h4 className="pill" style={{ fontFamily: "'Poiret One', cursive", color: "black" }}>Digital Map Design </h4>
+                    <h4 className="pill" style={{ fontFamily: "'Poiret One', cursive", color: "black" }}>Data Analysis</h4>
                 </div>
 
             </div>

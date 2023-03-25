@@ -1,7 +1,7 @@
-import LinkedInImg from '/img/linkedin_white.png'
-import GitHubImg from '/img/github_white.png'
-import RGImg from '/img/researchgate_white.png'
-import EmailImg from '/img/email.png'
+import LinkedInImg from '/img/linkedin_white.webp'
+import GitHubImg from '/img/github_white.webp'
+import RGImg from '/img/researchgate_white.webp'
+import EmailImg from '/img/email.webp'
 import './Social.css'
 
 function Social(){
