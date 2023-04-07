@@ -1,6 +1,4 @@
-
-
-# # in-Athens: A Virtual Tour of Lost Neoclassical Buildings
+#  in-Athens: A Virtual Tour of Lost Neoclassical Buildings
 ### powered by PMTiles 
 
 > you can see the working project [here](https://stories.in-athens.gr/stories/demolished/) (unfortunately it is only available in greek )
