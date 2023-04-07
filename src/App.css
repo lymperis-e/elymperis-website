@@ -70,8 +70,9 @@ h3 {
 
 
 body {
-  background-image: url(/img/isolines.webp);
-  /*
+  background-color: #fffef5;
+  /*background-image: url(/img/isolines.webp);
+  
   background-repeat: no-repeat;
   background-size: cover;
   */

@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import ProjectItem from '../components/Projects/ProjectItem'
+import MapItem from '../components/MapProjects/MapItem'
 
 
 import AthensHistoric from "/maps/athens_downtown.webp"
@@ -35,13 +35,13 @@ function Maps() {
                 </p>
 
 
-                <ProjectItem title="Athens Historic Downtown" mockup={AthensHistoric} descr="" link="/maps/athens_downtown.webp" />
-                <ProjectItem title="Mesolongi, Negative Map" mockup={Mesolongi} descr="" link="/maps/mesolongi.webp" />
-                <ProjectItem title="Patraic Gulf, Sentinel2 + SRTM" mockup={Patraic} descr="" link="/maps/patraic.webp" />
-                <ProjectItem title="Topographic Map of Olympus/Ossa" mockup={Olympus} descr="" link="/maps/olympus.webp" />
-                <ProjectItem title="Street Lights of Trikala" mockup={Trikala} descr="" link="/maps/trikala.webp" />
-                <ProjectItem title="Topographic & Street Map of Athens" mockup={AthensTopo} descr="" link="/maps/athens_topo.webp" />
-                <ProjectItem title="Ioannina Topographic Map, rendered in Blender" mockup={Ioannina} descr="" link="/maps/ioannina.webp" />
+                <MapItem title="Athens Historic Downtown" mockup={AthensHistoric} descr="" link="/maps/athens_downtown.webp" />
+                <MapItem title="Mesolongi, Negative Map" mockup={Mesolongi} descr="" link="/maps/mesolongi.webp" />
+                <MapItem title="Patraic Gulf, Sentinel2 + SRTM" mockup={Patraic} descr="" link="/maps/patraic.webp" />
+                <MapItem title="Topographic Map of Olympus/Ossa" mockup={Olympus} descr="" link="/maps/olympus.webp" />
+                <MapItem title="Street Lights of Trikala" mockup={Trikala} descr="" link="/maps/trikala.webp" />
+                <MapItem title="Topographic & Street Map of Athens" mockup={AthensTopo} descr="" link="/maps/athens_topo.webp" />
+                <MapItem title="Ioannina Topographic Map, rendered in Blender" mockup={Ioannina} descr="" link="/maps/ioannina.webp" />
                 
 
 

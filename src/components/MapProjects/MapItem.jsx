@@ -1,25 +1,29 @@
-import "./ProjectItem.css";
-import { WindowMockup } from "react-daisyui";
+import "./MapItem.css";
 import GithubButton from "../Custom/GithubButton";
 
-function ProjectItem(props) {
+function MapItem(props) {
+  function changeBackground(e) {
+    document.querySelector("#project-container").style.backgroundColor =
+      "rgb(123, 123, 121)";
+  }
+  function restoreBackground(e) {
+    document.querySelector("#project-container").style.backgroundColor =
+      "#fffef5";
+  }
+
   return (
     <>
       <div className="hero min-h-screen ">
         <div className="hero-content flex-col lg:flex-row">
-          {props.mockup ? (
-            <WindowMockup className="mockup-window border shadow-2xl    ">
-              <img
-                src={props.img}
-                className="p-2 max-w-viewport md:max-w-2xl"
-              ></img>
-            </WindowMockup>
-          ) : (
+          <a href={props.link} target="_blank">
             <img
-                src={props.img}
-                className="max-w-viewport rounded-lg shadow-2xl md:max-w-2xl"
-              ></img>
-          )}
+              src={props.mockup}
+              className="bw-img max-w-m rounded-lg shadow-2xl"
+              height="400"
+              onMouseEnter={changeBackground}
+              onMouseLeave={restoreBackground}
+            ></img>
+          </a>
 
           <div>
             <h1 className="text-5xl font-bold">{props.title}</h1>
@@ -41,4 +45,4 @@ function ProjectItem(props) {
   );
 }
 
-export default ProjectItem;
+export default MapItem;

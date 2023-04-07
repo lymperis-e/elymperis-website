@@ -9,9 +9,14 @@
     left: 0;
     text-align: center;
     border-bottom: solid 1px #f3d0b9;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(20px);
     font-family: 'Poiret One', cursive !important;
 
+
+    padding: 20px !important;
+align-items: center;
+justify-content: center;
+display: flex;
 }
 
 

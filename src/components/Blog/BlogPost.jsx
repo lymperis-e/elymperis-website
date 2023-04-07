@@ -1,7 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 import { useEffect, useState } from "react";
-
+import { Helmet } from "react-helmet";
 import "./Blog.css";
 
 function BlogPost(params) {
@@ -24,8 +24,16 @@ function BlogPost(params) {
 
   return (
     <>
-    <a href={info.repo_url}></a>
-    <div>
+    <Helmet>
+        <title>{info.title}</title>
+        <meta name="description" content={info.description} />
+        <meta name="keywords" content={info.keywords} />
+        <meta property="og:title" content={info.title} />
+        <meta property="og:description" content={info.description} />
+        <meta property="og:image" content={info.image_url} />
+      </Helmet>
+
+    <div className="prose prose-md">
       {markdown ? (
         <ReactMarkdown remarkPlugins={[gfm]}>{markdown}</ReactMarkdown>
       ) : (
