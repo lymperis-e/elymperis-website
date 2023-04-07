@@ -15,7 +15,9 @@ So we went ahead and downloaded our area of interest from the PMTiles [data down
 We also used [pmtiles-basemaps](https://github.com/protomaps/basemaps) to get an initial working style for the tiles (as PMTiles attributes' schema does not conform with Mapbox's or MapTiler's, which is understandable), which we modified to our liking.
 
 Serving the tiles was as easy as:
+
 **Copy** the *.pmtiles* file to our frontend **public** directory, then point MapLibre to *pmtiles://ourawesometiles.pmtiles*
+
 **BOOM**, DONE!
 
 Having a working, and frankly pleasing, map we developed the story-map mechanism on top of it using [scrollmagic](https://scrollmagic.io/).
