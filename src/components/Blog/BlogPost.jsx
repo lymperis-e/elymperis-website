@@ -2,7 +2,6 @@ import ReactMarkdown from "react-markdown";
 import gfm from "remark-gfm";
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import "./Blog.css";
 
 function BlogPost(params) {
   const [markdown, setMarkdown] = useState("");

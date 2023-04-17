@@ -1,43 +1,40 @@
 import Social from './Social'
-import ProfileImage from '/img/profile.webp'
 import './ProfileCard.css'
 
 import { useEffect } from 'react'
 
 function Profile() {
 
-    useEffect(() => {
-        document.querySelector('#profile-card').style.opacity = 1
-    })
+
 
     return (
-        <div id="profile-card">
+        <>
+            <div className="mx-5  text-current justify-normal">
 
-            <div className="pane-head" id="head">
-                <img id="profileImg" className="rounded-circle " src={ProfileImage} alt="profile picture" ></img>
-                <h1 className="funky" style={{ marginLeft: 'auto', zIndex:1 }}>Efstathios Lymperis</h1>
-            </div>
-
-            <div id="title-pane">
+                <div >
+                    <h1 className="funky font-bold ml-auto z-20" >Efstathios Lymperis</h1>
+                </div>
 
                 <p>Software Engineer <a href="https://www.getmap.eu" target="_blank">@Geospatial Enabling Technologies</a></p>
                 <p>MSc Geoinformatics </p>
-
-                <div className='pill-container'>
-                    <h4 className="pill" style={{ fontFamily: "'Poiret One', cursive", color: "black" }}>Web Development</h4>
-                    <h4 className="pill" style={{ fontFamily: "'Poiret One', cursive", color: "black" }}>Digital Map Design </h4>
-                    <h4 className="pill" style={{ fontFamily: "'Poiret One', cursive", color: "black" }}>Data Analysis</h4>
-                </div>
-
             </div>
 
-            <div className="pane-head">
-                <h5 className="typewriter" style={{ color: 'rgb(0, 0, 0)', fontFamily: `'Poiret One', cursive`, marginTop: '1rem' }}>📍 Thessaloniki & Athens, GR</h5>
-                <Social />
+            <div className='flex flex-row flex-wrap mx-5 my-7'>
+                <h4 className="badge badge-primary badge-outline mx-1 my-1" >Fullstack Development</h4>
+                <h4 className="badge badge-primary badge-outline mx-1 my-1" >Digital Map Design </h4>
+                <h4 className="badge badge-primary badge-outline mx-1 my-1" >Data Analysis</h4>
+                <h4 className="badge badge-primary badge-outline mx-1 my-1" >Geospatial systems</h4>
             </div>
 
 
-        </div>
+
+            <div className="">
+                <h5 className="typewriter" >📍 Thessaloniki & Athens, GR</h5>
+            </div>
+            <Social />
+        </>
+
+
     )
 }
 

@@ -1,9 +1,9 @@
 import React from "react";
 import GitHubLogo from "/img/github_dark.webp";
 
-function GithubButton(props) {
+function GithubButton({ className, style, children, ...props }) {
   return (
-    <div className="row">
+    <div className={className}>
       <a
         href={props.source_code}
         target="_blank"

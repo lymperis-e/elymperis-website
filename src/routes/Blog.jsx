@@ -4,17 +4,10 @@ import { useParams } from "react-router-dom";
 import BlogPost from "../components/Blog/BlogPost";
 
 function Blog() {
-
-  // Switch to monochrome-bg on component mount
-  useEffect(() => {
-    document.querySelector("#blog-container").style.backgroundColor =
-      "#fffef5";
-  });
-
   const { slug } = useParams();
 
   return (
-    <div id="blog-container">
+    <div  className="mt-20 mb-20 mx-5">
       <BlogPost post_md={slug} />
     </div>
   );

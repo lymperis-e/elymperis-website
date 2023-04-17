@@ -9,16 +9,12 @@ import WatershedPlugin from "/img/projects/watershed.webp";
 import InAthensMock from "/img/projects/stories-athens.webp"
 import RemoteDbMock from "/img/projects/remote_db.webp"
 function Projects() {
-  // Switch to monochrome-bg on component mount
-  useEffect(() => {
-    document.querySelector("#project-container").style.backgroundColor =
-      "#fffef5";
-  });
+
 
   return (
     <>
-      <div id="project-container">
-        <h1 className="section-title funky">&lt;/&gt; FEATURED PROJECTS</h1>
+      <div id="prose mx-3" className="bg-base-100">
+        <h1 className="section-title funky font-bold text-center md:text-left">&lt;/&gt; FEATURED PROJECTS</h1>
 
         <ProjectItem
           title="Open Greek Geodata"
@@ -27,6 +23,7 @@ function Projects() {
           descr="A one-stop-shop for greek geodata sources. This project unifies a multitude of government & research-funded sources of geodata related to Greece, and serving them through a lightly customized version of the amazing TerriaJS SDI Portal."
           link="http://data.elymperis.com"
           source_code={"https://github.com/lymperis-e/greek-open-data-portal"}
+          tags={["TerriaJS", "React", "NodeJS"]}
         />
 
         <ProjectItem
@@ -35,6 +32,7 @@ function Projects() {
           mockup={true}
           descr="A storymap app built from scratch with Vite, MapLibre & PMTiles, for the in-Athens project. Developed for Geospatial Enabling Technologies, all rights reserved"
           link="/blog/in_athens"
+          tags={["Vite", "MapLibre", "PMTiles"]}
         />
 
         <ProjectItem
@@ -43,6 +41,7 @@ function Projects() {
           descr="Integrate open geodata from public authorities of Greece into QGIS"
           link="https://plugins.qgis.org/plugins/grdata/"
           source_code={"https://github.com/lymperis-e/Greek-Data-QGIS-Plugin"}
+          tags={["QGIS", "Python", "PyQt5","OGC Web Services"]}
         />
 
         <ProjectItem
@@ -52,6 +51,7 @@ function Projects() {
           descr="Alpha version of my current professional project. A frost alerting system for the Ministry of Agriculture of Greece. All rights belong to Geospatial Enabling Technologies and the Ministry of Agriculture"
           link="http://frost.minagric.gr"
           source_code={false}
+          tags={["PostgeSQL", "Python", "GDAL", "Vector Tiles", "Meteo", "GRIB"]}
         />
 
         <ProjectItem
@@ -60,6 +60,7 @@ function Projects() {
           descr="A simple plugin to manage SSH connections to remote database servers from QGIS."
           link="/blog/remote_db"
           source_code={"https://github.com/lymperis-e/qgis_remote_db_plugin"}
+          tags={["QGIS", "Python", "PyQt5"]}
         />
 
         <ProjectItem
@@ -69,6 +70,7 @@ function Projects() {
           descr="A Proof-Of-Concept application. It enables the calculation of some simple indices from Landsat-8 imagery, by calling Google Earth Engine in the backend. It was developed as a curricular project for a course at the National Technical University of Athens. "
           link="http://earth.elymperis.com"
           source_code={false}
+          tags={["Google Earth Engine", "Django", "LeafletJS"]}
         />
 
         <ProjectItem
@@ -79,6 +81,7 @@ function Projects() {
           source_code={
             "https://github.com/lymperis-e/Geomeletitiki-Watershed-Analysis-Toolbox---QGIS-Plugin-"
           }
+          tags={["QGIS", "Python", "PyQt5", "SAGA GIS", "Hydrology", "Optimiser"]}
         />
       </div>
     </>

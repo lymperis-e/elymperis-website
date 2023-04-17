@@ -1,23 +1,4 @@
-#social {
-    display: flex;
-    flex-direction: row;
 
-    margin-left: auto;
-
-    border: solid 1px #f3d0b9;
-    border-radius: 500px;
-    margin-top: -20px;
-    text-align: center;
-    box-shadow: 0 0 10px 0px #0003;
-    backdrop-filter: blur(4px);
-
-
-    transition: all .6s;
-}
-
-#social:hover {
-    box-shadow: 0 0 10px 0px #4da893c2;
-}
 
 .social-btn {
     margin: .1rem;

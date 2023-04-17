@@ -7,7 +7,7 @@ import './Social.css'
 function Social(){
 
     return(
-        <div id="social">
+        <div className="fixed bottom-0 right-0">
              
     
             <div className="social-btn">

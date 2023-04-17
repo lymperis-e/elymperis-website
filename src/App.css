@@ -15,36 +15,17 @@
 
 h1 {
   font-family: var(--primary-font);
-  color: black !important;
-  text-shadow: 2px 2px #d9652c73;
 }
 
 h2 {
   font-family: var(--primary-font);
-  color: black !important;
-  text-shadow: 2px 2px #d9652c73;
+
 }
 
 h3 {
   font-family: var(--primary-font);
-  color: black !important;
-  text-shadow: 2px 2px #d9652c73;
 }
 
-
-.rounded-circle {
-  padding: 2px;
-  border-radius: 50% !important;
-}
-
-.img-hov{
-  opacity:.7;
-  transition: all .8s;
-}
-
-.img-hov:hover{
-  opacity:1
-}
 
 
 
@@ -52,11 +33,6 @@ h3 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.47);
   margin-bottom: 8px;
   margin-top: 100px;
-}
-
-.lead {
-  margin-left: 10px;
-  text-align: left !important;
 }
 
 
@@ -68,16 +44,6 @@ h3 {
 
 
 
-
-body {
-  background-color: #fffef5;
-  /*background-image: url(/img/isolines.webp);
-  
-  background-repeat: no-repeat;
-  background-size: cover;
-  */
-}
-
 #wrapper {
   display: flex;
   flex-direction: column;
@@ -88,21 +54,6 @@ body {
   overflow: hidden;
 }
 
-main {
-  font-family: 'Jost', sans-serif;
-  background-color: #f4f6f15e;
-  padding: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-left: 20px;
-  border-radius: 1000px;
-  margin-top: 20px;
-  box-shadow: 0 0 10px 0px #0003;
-  height: 500px;
-  width: 500px;
-  backdrop-filter: blur(4px);
-}
 
 
 .body-flex {
@@ -110,12 +61,6 @@ main {
   flex-direction: column;
   align-items: center;
 
-}
-
-.social {
-  display: flex;
-  flex-direction: row;
-  filter: invert(1);
 }
 
 

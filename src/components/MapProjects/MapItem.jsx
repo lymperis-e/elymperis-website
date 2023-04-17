@@ -11,6 +11,9 @@ function MapItem(props) {
       "#fffef5";
   }
 
+  const title = props.title ? props.title : "";
+  const subtitle = props.subtitle ? <h3 className="">{props.subtitle}</h3> : "";
+
   return (
     <>
       <div className="hero min-h-screen ">
@@ -20,28 +23,27 @@ function MapItem(props) {
               src={props.mockup}
               className="bw-img max-w-m rounded-lg shadow-2xl"
               height="400"
-              onMouseEnter={changeBackground}
-              onMouseLeave={restoreBackground}
+              /*onMouseEnter={changeBackground}
+              onMouseLeave={restoreBackground}*/
             ></img>
           </a>
 
           <div>
-            <h1 className="text-5xl font-bold">{props.title}</h1>
+            <h1 className=" max-w-xs">{props.title}</h1>
+            {subtitle}
             <p className="py-6 max-w-sm">{props.descr}</p>
 
             <div className="flex items-center">
-              <a className="btn btn-primary" href={props.link} target="_blank">
+              <a className="btn btn-primary btn-outline" href={props.link} target="_blank">
                 More
               </a>
 
-              {props.source_code && (
-                <GithubButton source_code={props.source_code}></GithubButton>
-              )}
             </div>
           </div>
         </div>
       </div>
-    <hr className="w-10/12 h-px my-8 bg-base-200 border-0 dark:bg-base-200"/>
+      <hr className="w-12/12 h-px my-8 bg-primary border-1 border-primary dark:bg-base-200" />
+
 
     </>
   );
