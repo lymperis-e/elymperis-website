@@ -14,19 +14,19 @@
 
 
 h1 {
-  font-family: 'Poiret One', cursive !important;
+  font-family: var(--primary-font);
   color: black !important;
   text-shadow: 2px 2px #d9652c73;
 }
 
 h2 {
-  font-family: 'Poiret One', cursive !important;
+  font-family: var(--primary-font);
   color: black !important;
   text-shadow: 2px 2px #d9652c73;
 }
 
 h3 {
-  font-family: 'Poiret One', cursive !important;
+  font-family: var(--primary-font);
   color: black !important;
   text-shadow: 2px 2px #d9652c73;
 }

@@ -41,6 +41,8 @@ function MapItem(props) {
           </div>
         </div>
       </div>
+    <hr className="w-10/12 h-px my-8 bg-base-200 border-0 dark:bg-base-200"/>
+
     </>
   );
 }

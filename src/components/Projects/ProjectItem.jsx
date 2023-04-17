@@ -5,7 +5,7 @@ import GithubButton from "../Custom/GithubButton";
 function ProjectItem(props) {
   return (
     <>
-      <div className="hero min-h-screen ">
+      <div className="hero min-h-screen border-base-300">
         <div className="hero-content flex-col lg:flex-row">
           {props.mockup ? (
             <WindowMockup className="mockup-window border shadow-2xl    ">
@@ -37,6 +37,8 @@ function ProjectItem(props) {
           </div>
         </div>
       </div>
+    <hr className="w-10/12 h-px my-8 bg-base-200 border-0 dark:bg-base-200"/>
+
     </>
   );
 }

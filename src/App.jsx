@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-import Navbar from './components/Navbar'
+import NavbarComponent from './components/Navbar'
 import Home from './routes/Home'
 import Bio from './routes/Bio'
 import Projects from './routes/Projects'
@@ -22,7 +22,7 @@ function App() {
     <div id='wrapper'>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Navbar />}>
+          <Route path="/" element={<NavbarComponent />}>
             <Route index element={<Home />} />
             <Route path="/bio" element={<Bio />} />
             <Route path="/projects" element={<Projects />} />

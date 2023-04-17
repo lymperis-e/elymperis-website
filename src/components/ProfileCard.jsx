@@ -20,8 +20,8 @@ function Profile() {
 
             <div id="title-pane">
 
-                <h3>Software Engineer <a href="https://www.getmap.eu" target="_blank">@Geospatial Enabling Technologies</a></h3>
-                <h3 style={{ fontFamily: "'Poiret One', cursive", color: "#004786 !important", maxWidth: '95vw' }}>MSc Geoinformatics </h3>
+                <p>Software Engineer <a href="https://www.getmap.eu" target="_blank">@Geospatial Enabling Technologies</a></p>
+                <p>MSc Geoinformatics </p>
 
                 <div className='pill-container'>
                     <h4 className="pill" style={{ fontFamily: "'Poiret One', cursive", color: "black" }}>Web Development</h4>
