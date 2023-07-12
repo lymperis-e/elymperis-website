@@ -8,7 +8,7 @@ import Projects from './routes/Projects'
 import Maps from './routes/Maps'
 
 import Blog from './routes/Blog'
-import BlogPost from './components/Blog/BlogPost'
+import NTUA from './routes/NTUA'
 
 
 import './App.css'
@@ -28,6 +28,8 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/maps" element={<Maps />} />
             <Route path="/blog/:slug" element={<Blog />} />
+            <Route path="/big_data/:slug" element={<NTUA />} />
+
           </Route>
         </Routes>
       </BrowserRouter>

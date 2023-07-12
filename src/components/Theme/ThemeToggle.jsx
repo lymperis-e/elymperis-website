@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Toggle, Form } from "react-daisyui";
+
 function ThemeToggle({
     light,
     dark,
@@ -7,33 +8,32 @@ function ThemeToggle({
 }) {
     const [theme, setTheme] = useState('light');
     const [checked, setChecked] = useState(true)
-    const toggleTheme = () => {
-        setTheme(theme === light ? dark : light);
-    };
-    const toggleChecked = () => {
-        setChecked(checked === true ? false : true);
-    };
-    
-    // set the theme based on the stored value in local storage, if available
+
+    // get the theme from local storage or use the default value
     useEffect(() => {
         const storedTheme = localStorage.getItem('theme');
         if (storedTheme) {
             setTheme(storedTheme);
+            setChecked(storedTheme === dark);
         }
-    }, []);
+    }, [dark]);
 
-    // update the theme in local storage whenever it changes
-    useEffect(() => {
-        localStorage.setItem('theme', theme);
-        document.querySelector('html').setAttribute('data-theme', theme);
-    }, [theme]);
+    // update the theme in local storage and on the document's html element
+    const toggleTheme = () => {
+        const newTheme = theme === light ? dark : light;
+        setTheme(newTheme);
+        localStorage.setItem('theme', newTheme);
+        document.documentElement.setAttribute('data-theme', newTheme);
+        setChecked(newTheme === dark);
+    };
 
     return (
         <Form className="form-control">
             <Form.Label title={description}>
-                <Toggle onClick={toggleTheme} className="toggle toggle-primary toggle-sm" onChange={toggleChecked} />
+                <Toggle onClick={toggleTheme} className="toggle toggle-primary toggle-sm" checked={checked} />
             </Form.Label>
         </Form>
     );
 }
-export default ThemeToggle
+
+export default ThemeToggle;

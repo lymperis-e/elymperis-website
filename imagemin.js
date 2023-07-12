@@ -23,6 +23,14 @@ const files3 = await imagemin(['./_raw_img/maps/*.{jpg,png}'], {
 	]
 });
 
+const files4 = await imagemin(['./public/ntua/img/*.{jpg,png}'], {
+	destination: './public/ntua/img',
+	plugins: [
+		imageminWebp({quality: 70})
+	]
+});
+
 console.log(files1);
 console.log(files2);
 console.log(files3);
+console.log(files4);
